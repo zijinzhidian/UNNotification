@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TestViewController.h"
 
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
@@ -47,7 +48,10 @@
         
     }];
     
-    
+    NSDictionary *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localNotification) {
+        NSLog(@"app是通过点击通知而启动的");
+    }
     
     //注册推送通知
     [application registerForRemoteNotifications];
@@ -84,7 +88,7 @@
             [data writeToFile:path atomically:YES];
             
             //创建触发器
-            UNTimeIntervalNotificationTrigger *timeTrigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:3 repeats:NO];
+            UNTimeIntervalNotificationTrigger *timeTrigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:10 repeats:NO];
             UNNotificationAttachment *achment = [UNNotificationAttachment attachmentWithIdentifier:@"这是附件标识" URL:[NSURL fileURLWithPath:path] options:@{UNNotificationAttachmentOptionsThumbnailClippingRectKey:[NSValue valueWithCGRect:CGRectMake(0, 0, 1, 1)]} error:nil];
                         
             //组合内容
@@ -203,6 +207,8 @@
     }
     
     NSLog(@"点击了通知");
+    UIViewController *vc = self.window.rootViewController;
+    [vc presentViewController:[[TestViewController alloc] init] animated:true completion:nil];
     
     completionHandler();
     

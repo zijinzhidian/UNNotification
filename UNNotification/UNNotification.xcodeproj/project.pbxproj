@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1811EFF021BDFEEA0077A0E9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811EFEF21BDFEEA0077A0E9 /* TestViewController.m */; };
 		18460D5C1F958D000005BCCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18460D5B1F958D000005BCCE /* main.m */; };
 		18460D5F1F958D000005BCCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18460D5E1F958D000005BCCE /* AppDelegate.m */; };
 		18460D621F958D000005BCCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18460D611F958D000005BCCE /* ViewController.m */; };
@@ -75,6 +76,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1811EFEE21BDFEEA0077A0E9 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		1811EFEF21BDFEEA0077A0E9 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		18460D571F958D000005BCCE /* UNNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UNNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18460D5B1F958D000005BCCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18460D5D1F958D000005BCCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 				18460D5E1F958D000005BCCE /* AppDelegate.m */,
 				18460D601F958D000005BCCE /* ViewController.h */,
 				18460D611F958D000005BCCE /* ViewController.m */,
+				1811EFEE21BDFEEA0077A0E9 /* TestViewController.h */,
+				1811EFEF21BDFEEA0077A0E9 /* TestViewController.m */,
 				18F06A1B1F97405F00608D4C /* jcore-ios-1.1.6.a */,
 				18F06A1C1F97405F00608D4C /* jpush-ios-3.0.7.a */,
 				18F06A1D1F97405F00608D4C /* JPUSHService.h */,
@@ -346,7 +351,7 @@
 		18460D4F1F958D000005BCCE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = zjbojin;
 				TargetAttributes = {
 					18460D561F958D000005BCCE = {
@@ -442,6 +447,7 @@
 			files = (
 				18460D621F958D000005BCCE /* ViewController.m in Sources */,
 				18460D5F1F958D000005BCCE /* AppDelegate.m in Sources */,
+				1811EFF021BDFEEA0077A0E9 /* TestViewController.m in Sources */,
 				18460D5C1F958D000005BCCE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +530,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -531,6 +538,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -579,6 +587,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -586,6 +595,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
